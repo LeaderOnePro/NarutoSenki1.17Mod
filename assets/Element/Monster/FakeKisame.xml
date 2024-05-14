@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Kisame</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Kisame_Skill04_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+          <frameName>Kisame_Skill04_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">3000</dateName>
+        <dateName type="attackRangeX">128</dateName>
+        <dateName type="attackRangeY">64</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Kisame_Skill04_03.png</frameName>
+        <frameName>Kisame_Skill04_04.png</frameName>
+         <eventName type="setDelay">10</eventName>
+        <frameName>Kisame_Skill04_05.png</frameName>
+        <frameName>Kisame_Skill04_06.png</frameName>
+        <frameName>Kisame_Skill04_07.png</frameName>
+        <frameName>Kisame_Skill04_08.png</frameName>
+        <frameName>Kisame_Skill04_09.png</frameName>
+        <frameName>Kisame_Skill04_10.png</frameName>
+        <frameName>Kisame_Skill04_11.png</frameName>
+        <frameName>Kisame_Skill04_12.png</frameName>
+        <frameName>Kisame_Skill04_13.png</frameName>
+         <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Kisame_Skill04_14.png</frameName>
+        <frameName>Kisame_Skill04_15.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

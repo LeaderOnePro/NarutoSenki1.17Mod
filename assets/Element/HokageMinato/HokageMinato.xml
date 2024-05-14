@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">HokageMinato</dateName>
+        <dateName type="attackValue">5500</dateName>
+        <dateName type="attackRangeX">40</dateName>
+        <dateName type="attackRangeY">85</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>HokageMinato_Idle_01.png</frameName>
+        <frameName>HokageMinato_Idle_02.png</frameName>
+        <frameName>HokageMinato_Idle_03.png</frameName>
+        <frameName>HokageMinato_Idle_04.png</frameName>
+        <frameName>HokageMinato_Idle_03.png</frameName>
+          <frameName>HokageMinato_Idle_02.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>HokageMinato_Walk_01.png</frameName>
+        <frameName>HokageMinato_Walk_02.png</frameName>
+        <frameName>HokageMinato_Walk_03.png</frameName>
+        <frameName>HokageMinato_Walk_04.png</frameName>
+        <frameName>HokageMinato_Walk_05.png</frameName>
+        <frameName>HokageMinato_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>HokageMinato_Hurt_01.png</frameName>
+        <frameName>HokageMinato_Hurt_02.png</frameName>
+             </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>HokageMinato_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>HokageMinato_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_KnockDown_02.png</frameName>
+          <frameName>HokageMinato_KnockDown_03.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>HokageMinato_KnockDown_04.png</frameName>
+          <frameName>HokageMinato_KnockDown_05.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>HokageMinato_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>HokageMinato_KnockDown_01.png</frameName>
+          <frameName>HokageMinato_KnockDown_02.png</frameName>
+           <frameName>HokageMinato_KnockDown_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">80</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">16</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>HokageMinato_NAttack_01.png</frameName>
+        <frameName>HokageMinato_NAttack_02.png</frameName>
+        <frameName>HokageMinato_NAttack_03.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>HokageMinato_NAttack_04.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.ogg</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>HokageMinato_NAttack_05.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>HokageMinato_NAttack_06.png</frameName>
+        <frameName>HokageMinato_NAttack_07.png</frameName>
+        <eventName type="setSound">Audio/Effect/kuwu.ogg</eventName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <frameName>HokageMinato_NAttack_08.png</frameName>
+        <frameName>HokageMinato_NAttack_09.png</frameName>
+        <frameName>HokageMinato_NAttack_10.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <frameName>HokageMinato_NAttack_11.png</frameName>
+        <eventName type="setSound">Audio/Minato/minato_combo.ogg</eventName>
+        <eventName type="setSound">Audio/Effect/combo3.ogg</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>HokageMinato_NAttack_12.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">150</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">15</dateName>
+       <coldName type="coldDown">5</coldName>
+     </date>
+     <frame>
+        <frameName>HokageMinato_Skill01_01.png</frameName>
+        <eventName type="setSound">Audio/HokageMinato/HokageMinato_skill1.ogg</eventName>
+        <frameName>HokageMinato_Skill01_02.png</frameName>
+        <frameName>HokageMinato_Skill01_03.png</frameName>
+        <frameName>HokageMinato_Skill01_04.png</frameName>
+        <eventName type="setDelay">20</eventName>
+        <eventName type="setBuff">17</eventName>
+         <eventName type="setMon">HiraishinMark</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+            <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">860</dateName>
+            <dateName type="attackRangeX">32</dateName>
+            <dateName type="attackRangeY">64</dateName>
+            <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+            <eventName type="setSound">Audio/HokageMinato/HokageMinato_skill2.ogg</eventName>
+            <frameName>HokageMinato_Skill02_01.png</frameName>
+            <frameName>HokageMinato_Skill02_02.png</frameName>
+            <eventName type="setBullet">HiraishinKunai</eventName>
+            <frameName>HokageMinato_Skill02_03.png</frameName>
+            <frameName>HokageMinato_Skill02_04.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <eventName type="setSound">Audio/Effect/rasen.ogg</eventName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+            <frameName>HokageMinato_Skill02_05.png</frameName>
+            <frameName>HokageMinato_Skill02_06.png</frameName>
+            <frameName>HokageMinato_Skill02_07.png</frameName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+      <date>
+            <dateName type="attackType">cAttack</dateName>
+             <dateName type="attackValue">1600</dateName>
+             <dateName type="attackRangeX">32</dateName>
+             <dateName type="attackRangeY">32</dateName>
+             <coldName type="coldDown">25</coldName>
+       </date>
+        <frame>
+            <frameName>HokageMinato_Skill03_01.png</frameName>
+            <frameName>HokageMinato_Skill03_02.png</frameName>
+            <frameName>HokageMinato_Skill03_03.png</frameName>
+            <frameName>HokageMinato_Skill03_01.png</frameName>
+            <eventName type="setSound">Audio/HokageMinato/HokageMinato_skill3.ogg</eventName>
+            <frameName>HokageMinato_Skill03_04.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>HokageMinato_Skill03_05.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>HokageMinato_Skill03_06.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>HokageMinato_Skill03_01.png</frameName>
+            <frameName>HokageMinato_Skill03_07.png</frameName>
+             <eventName type="setCommand">setInvincible</eventName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>HokageMinato_Skill03_08.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>HokageMinato_Skill03_09.png</frameName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>HokageMinato_Skill03_10.png</frameName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <eventName type="setDelay">20</eventName>
+             <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+         <dateName type="attackType">oAttack</dateName>
+         <dateName type="attackValue">460</dateName>
+         <dateName type="attackRangeX">64</dateName>
+         <dateName type="attackRangeY">32</dateName>
+         <coldName type="coldDown">1</coldName>
+
+     </date>
+     <frame>
+      <eventName type="setSound">Audio/Effect/ougis.ogg</eventName>
+      <frameName>HokageMinato_Skill04_001.png</frameName> 
+      <eventName type="setSound">Audio/HokageMinato/HokageMinato_skill4.ogg</eventName>
+      <frameName>HokageMinato_Skill04_002.png</frameName> 
+       <eventName type="setCommand">setInvincible</eventName>
+      <frameName>HokageMinato_Skill04_003.png</frameName> 
+      <eventName type="setAttackBox">f_hit</eventName>
+      <frameName>HokageMinato_Skill04_004.png</frameName> 
+      <frameName>HokageMinato_Skill04_005.png</frameName> 
+      <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+      <frameName>HokageMinato_Skill04_006.png</frameName> 
+      <frameName>HokageMinato_Skill04_007.png</frameName> 
+      <eventName type="setAttackBox">ac_hit</eventName>
+      <frameName>HokageMinato_Skill04_008.png</frameName> 
+      <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+      <frameName>HokageMinato_Skill04_009.png</frameName> 
+      <frameName>HokageMinato_Skill04_010.png</frameName> 
+      <eventName type="setAttackBox">ac_hit</eventName>
+      <frameName>HokageMinato_Skill04_011.png</frameName> 
+      <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+      <frameName>HokageMinato_Skill04_012.png</frameName> 
+      <frameName>HokageMinato_Skill04_013.png</frameName> 
+      <frameName>HokageMinato_Skill04_014.png</frameName>
+      <eventName type="setCharge">320</eventName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+      <frameName>HokageMinato_Skill04_015.png</frameName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+      <frameName>HokageMinato_Skill04_016.png</frameName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+      <frameName>HokageMinato_Skill04_017.png</frameName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+      <frameName>HokageMinato_Skill04_018.png</frameName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+      <frameName>HokageMinato_Skill04_019.png</frameName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+      <frameName>HokageMinato_Skill04_020.png</frameName> 
+      <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+      <eventName type="setDelay">10</eventName>
+       <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+     <date>
+            <dateName type="attackType">cBuff</dateName>
+            <dateName type="attackValue">400</dateName>
+            <dateName type="attackRangeX">32</dateName>
+            <dateName type="attackRangeY">15</dateName>
+            <coldName type="coldDown">3</coldName>
+     </date>
+     <frame>
+           <eventName type="setSound">Audio/Effect/ougis.ogg</eventName>
+            <eventName type="setCommand">setInvincible</eventName>
+            <frameName>HokageMinato_Skill05_01.png</frameName>
+            <frameName>HokageMinato_Skill05_02.png</frameName>
+            <frameName>HokageMinato_Skill05_03.png</frameName>
+            <eventName type="setOugis">10</eventName>
+            <frameName>HokageMinato_Skill05_04.png</frameName>
+            <frameName>HokageMinato_Skill05_05.png</frameName>
+            <frameName>HokageMinato_Skill05_06.png</frameName>
+            <frameName>HokageMinato_Skill05_07.png</frameName>
+            <frameName>HokageMinato_Skill05_08.png</frameName>
+            <frameName>HokageMinato_Skill05_09.png</frameName>
+            <frameName>HokageMinato_Skill05_10.png</frameName>
+            <eventName type="setBuff">18</eventName>
+     </frame>
+
+    </action>
+
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">Transport</dateName>
+            <dateName type="attackValue">600</dateName>
+            <dateName type="attackRangeX">64</dateName>
+            <dateName type="attackRangeY">32</dateName>
+            <coldName type="coldDown">3</coldName>
+        </date>
+        <frame>
+            <eventName type="setSkillEffect">Hiraishin</eventName>
+            <eventName type="setSound">Audio/HokageMinato/HokageMinato_skill1_1.ogg</eventName>
+            <eventName type="setCommand">setTransport</eventName>
+            <frameName>HokageMinato_Skill10_01.png</frameName>
+            <frameName>HokageMinato_Skill10_02.png</frameName>
+            <frameName>HokageMinato_Skill10_03.png</frameName>
+            <frameName>HokageMinato_Skill10_04.png</frameName>
+            <frameName>HokageMinato_Skill10_05.png</frameName>
+            <frameName>HokageMinato_Skill10_06.png</frameName>
+        </frame>
+    </action>
+    <action value="skill11">
+        <date>
+            <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">600</dateName>
+            <dateName type="attackRangeX">32</dateName>
+            <dateName type="attackRangeY">64</dateName>
+            <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+         <eventName type="setCommand">setInvincible</eventName>
+          <eventName type="setSkillEffect">Hiraishin</eventName>
+          <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+          <eventName type="setCommand">setTransport</eventName>
+          <frameName>HokageMinato_Skill02_09.png</frameName>
+           <eventName type="setSound">Audio/HokageMinato/HokageMinato_skill2_1.ogg</eventName>
+          <frameName>HokageMinato_Skill02_10.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Skill02_11.png</frameName>
+            <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Skill02_12.png</frameName>
+            <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Skill02_13.png</frameName>
+            <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Skill02_14.png</frameName>
+            <eventName type="setSound">Audio/Effect/damage_l.ogg</eventName>  
+          <eventName type="setAttackBox">b_hit</eventName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>HokageMinato_Skill02_15.png</frameName>
+          <frameName>HokageMinato_Skill02_16.png</frameName>
+          <frameName>HokageMinato_Skill02_17.png</frameName>
+          <frameName>HokageMinato_Skill02_18.png</frameName>
+          <eventName type="setActionResume2">20</eventName>
+          <eventName type="setCommand">setTransport</eventName>
+          <eventName type="setCommand">reInvincible</eventName>
+          <frameName>HokageMinato_Skill02_19.png</frameName>
+          <frameName>HokageMinato_Skill02_20.png</frameName>
+          <frameName>HokageMinato_Skill02_21.png</frameName>
+          <frameName>HokageMinato_Skill02_22.png</frameName>
+          
+        </frame>
+
+    </action>
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">cAttack</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+            <eventName type="setSkillEffect">Hiraishin</eventName> 
+            <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+            <eventName type="setCommand">findTarget</eventName> 
+            <eventName type="setCommand">setTransport</eventName>
+            <frameName>HokageMinato_NAttack_01.png</frameName>
+            <frameName>HokageMinato_NAttack_02.png</frameName>
+            <frameName>HokageMinato_NAttack_03.png</frameName>
+            <frameName>HokageMinato_Skill12_01.png</frameName>
+            <eventName type="setSound">Audio/Effect/combo1.ogg</eventName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <eventName type="setDelay">10</eventName>
+
+            <eventName type="setSkillEffect">Hiraishin</eventName> 
+            <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+            <eventName type="setCommand">findTarget</eventName> 
+            <eventName type="setCommand">setTransport</eventName>
+
+            <frameName>HokageMinato_Skill12_02.png</frameName>
+            <frameName>HokageMinato_Skill12_03.png</frameName>
+            <frameName>HokageMinato_Skill12_04.png</frameName>
+            <frameName>HokageMinato_NAttack_06.png</frameName>
+            <frameName>HokageMinato_NAttack_07.png</frameName>
+            <eventName type="setSound">Audio/Effect/kuwu.ogg</eventName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <frameName>HokageMinato_Skill12_05.png</frameName>
+
+            <eventName type="setSkillEffect">Hiraishin</eventName> 
+            <eventName type="setSound">Audio/Effect/hiraishin_effect.ogg</eventName>
+            <eventName type="setCommand">findTarget</eventName> 
+            <eventName type="setCommand">setTransport</eventName>
+
+            <frameName>HokageMinato_Skill12_06.png</frameName>
+            <frameName>HokageMinato_Skill12_07.png</frameName>
+            <frameName>HokageMinato_Skill12_08.png</frameName>
+            <frameName>HokageMinato_Skill12_09.png</frameName>
+            <eventName type="setMove">16</eventName>
+            <frameName>HokageMinato_Skill12_10.png</frameName>
+            <eventName type="setSound">Audio/Minato/minato_combo.ogg</eventName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <frameName>HokageMinato_Skill12_11.png</frameName>
+            <frameName>HokageMinato_Skill12_12.png</frameName>
+        
+        </frame>
+
+    </action>
+
+     
+</animation>
